@@ -43,11 +43,12 @@ li,a,button{
     padding: 0 3vh;
 }
 .nav__links li a {
+    border-radius: 20px;
     cursor: pointer;
-    transition: 0.5s all ease;
 }
 .nav__links li a:hover {
-    color:black;
+    color: #f2ba36
+
 }
 .loging button{
     border: none;
@@ -55,6 +56,48 @@ li,a,button{
     font-size: 16px;
     width: 120px;
     height: 35px;
-    background: linear-gradient(90deg, rgba(130,4,164,1) 0%, rgba(178,12,207,1) 42%, rgba(115,0,255,1) 100%);
+    background-color: #f2ba36;
     cursor: pointer;
+    transition: transform 0.3s ease;
+}
+button:hover{
+    transform: scale(1.1);
+}
+article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20vh 0 0 50vh;
+    color: white;
+    font-weight: bold;
+
+}
+.showMessage{
+    font-size:50px;
+    font-weight: 600;
+    min-width: 280px;
+}
+#grandmother{
+    position: relative;
+    color: #f2ba36;
+}
+.showMessage span::after{
+    content:"";
+    position: absolute;
+    height: 100%;
+    right: -2vh;
+    overflow: hidden;
+    border-left: 5px solid #f2ba36;
+    animation: typing 2s steps(18),
+                cursor .8s step-end infinite alternate;
+}
+@keyframes cursor{
+   50%{
+    border-color: transparent;
+   }
+}
+@keyframes typing{
+    from{
+        width: 0;
+    }
 }
