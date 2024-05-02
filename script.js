@@ -7,7 +7,7 @@ const element = document.getElementById("swapping");
 let sleepTime = 250;
 let curPhraseIndex = 0;
 
-const writeLetter = async () =>{
+let writeLetter = async () =>{
     while(true){
         let curWord = phrases[curPhraseIndex];
         for (let i = 0; i< curWord.length; i++) {
@@ -26,21 +26,30 @@ const writeLetter = async () =>{
 
 writeLetter();
 
-const boxContainer = document.querySelector('.registration__login__container');
+const registrationContainer = document.querySelector('.registration__login__container');
 const loginLink = document.querySelector('.login__link');
 const registerLink = document.querySelector('.register__link');
 const loginButton = document.querySelector('.loging');
 const close = document.querySelector('.icon__close');
+const reciepsButton = document.querySelector('.recieps__btn');
 
 registerLink.addEventListener('click', () => {
-    boxContainer.classList.add('active');
+    registrationContainer.classList.add('active');
 });
 loginLink.addEventListener('click', () => {
-    boxContainer.classList.add('active');
+    registrationContainer.classList.remove('active');
 });
 loginButton.addEventListener('click', () => {
-    boxContainer.classList.add('active-label');
+    registrationContainer.classList.add('active-label');
 });
 close.addEventListener('click', () => {
-    boxContainer.classList.remove('active-label');
+    registrationContainer.classList.remove('active-label');;
 });
+
+registrationContainer.addEventListener('click', () => {
+    reciepsButton.classList.add('lower-z-index');
+});
+close.addEventListener('click', function() {
+    reciepsButton.classList.remove('lower-z-index');
+});
+

@@ -26,14 +26,14 @@ li,a,button{
 }
 .navbar__container{
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    width: 100%;
+    position: fixed;
 }
 .logo{
-    cursor:pointer;
-    margin-right: auto;
-
+    font-size: 3em;
+    color: #f2ba36;
+    margin-right: 40vh;
 }
 .nav__links{
     list-style: none;
@@ -50,6 +50,14 @@ li,a,button{
 .nav__links li a:hover {
     color: #f2ba36;
 }
+.nav__links input{
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    width: 200px;
+    height: 30px;
+
+}
 .loging{
     border: none;
     border-radius: 20px;
@@ -59,6 +67,7 @@ li,a,button{
     background-color: #f2ba36;
     cursor: pointer;
     transition: transform 0.3s ease;
+    margin-left: auto;
 }
 button:hover{
     transform: scale(1.1);
@@ -72,10 +81,9 @@ article{
     font-weight: bold;
 
 }
-.showMessage{
-    font-size:50px;
-    font-weight: 600;
-    min-width: 280px;
+.message{
+    position: relative;
+    top: 10vh;
 }
 .showMessage{
     font-size:70px;
@@ -116,14 +124,16 @@ article{
     font-family: "Dancing Script" , sans-serif;
     font-size: 35px;
 }
-.registration__btn{
+.recieps__btn{
     display: flex;
     align-items: center;
     justify-content: center;
     padding-top: 4vh;
     padding-left: 50vh;
+    position: relative;
+    z-index: 10;
 }
-.registration__btn button{
+.recieps__btn button{
     border: none;
     border-radius: 20px;
     font-size: 20px;
@@ -133,7 +143,11 @@ article{
     cursor: pointer;
     transition: transform 0.3s ease;
 }
-.box__container{
+.recieps__btn.lower-z-index {
+    z-index: 1; 
+}
+
+.login__box{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -142,7 +156,6 @@ article{
     left: 45%;
     width: 30%;
     color:white;
-    z-index:1;
 }
 .close__box{
     position: absolute;
@@ -165,11 +178,10 @@ article{
     overflow:hidden;
     transform: scale(0);
     transition: transform .5s ease , height .2s ease;
-}
-.registration__login__container{
     padding: 20px;
+    z-index: 2;
 }
-.active{
+.registration__login__container.active{
     height: 620px;
 }
 .active-label{
@@ -184,22 +196,28 @@ article{
 .log__box input, .registration__box input{
     color: white;
 }
-.log__box{
+.registration__login__container .log__box{
     transition: transform .18s ease;
     transform:translateX(0);
 }
-.active, .log__box{
+.registration__login__container.active .log__box{
     transition: none;
     transform: translateX(-500px);
 }
-.registration__box {
+.registration__login__container .registration__box {
     position: absolute;
     transition: none;
     transform: translateX(500px);
 }
-.active, .registration__box{
+.registration__login__container.active .registration__box{
     transition: none;
     transform: translateX(0);
+}
+.registration__login__container .close__box{
+    position: absolute;
+    top:2vh;
+    left: 2vh;
+    cursor: pointer;
 }
 .input__box{
     position: relative;

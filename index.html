@@ -11,29 +11,30 @@
     <section class="home">
         <header>
             <div class="navbar__container">
-                <h1>Swapp</h1>
+                <h1 class = "logo">Swapp</h1>
                 <nav>
                     <ul class="nav__links">
                         <li><a href="#">Strona główna</a></li>
                         <li><a href="#">Przepisy</a></li>
                         <li><a href="#">O mnie</a></li>
+                        <li><input type="text" name="search" placeholder="Szukaj..." class="search"></li>
                     </ul>
                 </nav>
                 <button class="loging">Logowanie</button>
             </div>
         </header>
 
-        <section>
+        <section class="message">
             <article class="showMessage">
                 <h1>Strona z przepisami <span id="swapping"></span></h1>
             </article>
             <article class="registration">
-                <p>Jeśli chcesz wymieniać się przepisami kliknij przycisk poniżej</p>
+                <p>Jeśli szukasz fajnych przepisów kliknij przycisk poniżej</p>
             </article>
-            <a href="registration.html" class="registration__btn"><button>Rejestracja</button></a>
+            <a class="recieps__btn"><button>Przepisy</button></a>
         </section>
 
-        <section class="box__container">
+        <section class="login__box">
             <div class="registration__login__container">
                 <div class="close__box">
                     <img class="icon__close" src="images/close.png">
@@ -90,7 +91,7 @@
                     </div>
                     <a href="login.html" class="login"><button type="submit">Zarejestruj</button></a>
                     <div class="login__register">
-                        <p>Masz konto ?<a href="#" class="login__link">Zaloguj się</a></p>
+                        <p>Masz konto? <a href="#" class="login__link">Zaloguj się</a></p>
                     </div>
                 </div>
             </div>
