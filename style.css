@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: "Montserrat" , sans-serif;
 }
-body{
+.home{
     background-image: url(images/background1.jpg);
     height: 100vh;
     width: 100%;
@@ -47,10 +48,9 @@ li,a,button{
     cursor: pointer;
 }
 .nav__links li a:hover {
-    color: #f2ba36
-
+    color: #f2ba36;
 }
-.loging button{
+.loging{
     border: none;
     border-radius: 20px;
     font-size: 16px;
@@ -77,7 +77,12 @@ article{
     font-weight: 600;
     min-width: 280px;
 }
-#grandmother{
+.showMessage{
+    font-size:70px;
+    font-weight: 600;
+    min-width: 280px;
+}
+#swapping{
     position: relative;
     color: #f2ba36;
 }
@@ -100,4 +105,177 @@ article{
     from{
         width: 0;
     }
+}
+.registration{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5vh;
+}
+.registration p {
+    font-family: "Dancing Script" , sans-serif;
+    font-size: 35px;
+}
+.registration__btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4vh;
+    padding-left: 50vh;
+}
+.registration__btn button{
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    width: 200px;
+    height: 40px;
+    background-color: #f2ba36;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.box__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -40%;
+    left: 45%;
+    width: 30%;
+    color:white;
+    z-index:1;
+}
+.close__box{
+    position: absolute;
+    top:2vh;
+    left: 2vh;
+    cursor: pointer;
+}
+.registration__login__container{
+    position: relative;
+    width: 500px;
+    height: 540px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0,0,0,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+    transform: scale(0);
+    transition: transform .5s ease , height .2s ease;
+}
+.registration__login__container{
+    padding: 20px;
+}
+.active{
+    height: 620px;
+}
+.active-label{
+    transform: scale(1);
+}
+.log__box h2,.registration__box h2{
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.log__box input, .registration__box input{
+    color: white;
+}
+.log__box{
+    transition: transform .18s ease;
+    transform:translateX(0);
+}
+.active, .log__box{
+    transition: none;
+    transform: translateX(-500px);
+}
+.registration__box {
+    position: absolute;
+    transition: none;
+    transform: translateX(500px);
+}
+.active, .registration__box{
+    transition: none;
+    transform: translateX(0);
+}
+.input__box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid white;
+    margin: 30px 0;
+}
+.input__box label{
+    position: absolute;
+    top:50%;
+    left:1vh;
+    transform: translateY(-50%);
+    font-size: 1em;
+    transition: .5s;
+}
+.input__box input:focus~label,
+.input__box input:valid~label {
+    top:0;
+}
+.input__box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 0 1vh 0 1vh;
+}
+.img__register__login{
+    width: 16px;
+    height: 16px;
+}
+.input__box img{
+    position: absolute;
+    top:2vh;
+    right: 1vh;
+}
+.remember__forgot{
+    font-size: 0.9em;
+    font-weight: 500;
+    margin: -1vh 0 1vh;
+    display: flex;
+    justify-content: space-between;
+}
+.remember__forgot label input {
+    accent-color: #f2ba36;
+}
+.remember__forgot a:hover{
+    text-decoration: underline;
+}
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3vh;
+}
+ .login button {
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    width: 350px;
+    height: 40px;
+    background-color: #f2ba36;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.login__register{
+    text-align: center;
+    margin: 2vh;
+    font-weight: 600;
+}
+.register__link{
+    margin-left: 2vh;
+}
+.login__register p a:hover{
+    text-decoration: underline;
 }

@@ -5,24 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Marcin Watras" content="Recieps">
     <link rel="stylesheet" href="style.css">
-    <title>Przepisy</title>
+    <title>Swapp</title>
 </head>
 <body>
-    <header>
-        <div class="navbar__container">
-            <nav>
-                <ul class="nav__links">
-                    <li><a href="#">Strona główna</a></li>
-                    <li><a href="#">Przepisy</a></li>
-                </ul>
-            </nav>
-            <a href="#" class="loging"><button>Logowanie</button></a>
-        </div>
-    </header>
-    <section>
-        <article class="showMessage">
-            <h1>Strona przepisów <span id="grandmother"></span></h1>
-        </article>
+    <section class="home">
+        <header>
+            <div class="navbar__container">
+                <h1>Swapp</h1>
+                <nav>
+                    <ul class="nav__links">
+                        <li><a href="#">Strona główna</a></li>
+                        <li><a href="#">Przepisy</a></li>
+                        <li><a href="#">O mnie</a></li>
+                    </ul>
+                </nav>
+                <button class="loging">Logowanie</button>
+            </div>
+        </header>
+
+        <section>
+            <article class="showMessage">
+                <h1>Strona z przepisami <span id="swapping"></span></h1>
+            </article>
+            <article class="registration">
+                <p>Jeśli chcesz wymieniać się przepisami kliknij przycisk poniżej</p>
+            </article>
+            <a href="registration.html" class="registration__btn"><button>Rejestracja</button></a>
+        </section>
+
+        <section class="box__container">
+            <div class="registration__login__container">
+                <div class="close__box">
+                    <img class="icon__close" src="images/close.png">
+                </div>
+                <div class="log__box">
+                    <h2>Logowanie</h2>
+                    <div class="input__box">
+                        <img src="images/email.png" class="img__register__login" name="email">
+                        <input type="email" required>
+                        <label>E-mail</label>
+                    </div>
+                    <div class="input__box">
+                        <img src="images/padlock.png" class="img__register__login" name="padlock">
+                        <input type="password" required>
+                        <label>Hasło</label>
+                    </div>
+                    <div class="remember__forgot">
+                        <label>
+                            <input type="checkbox"> Zapamiętaj mnie
+                        </label>
+                        <a href="#" class="forgot__register">Zapomniałeś hasła?</a>
+                    </div>
+                    <a href="login.html" class="login"><button type="submit">Zaloguj się</button></a>
+                    <div class="login__register">
+                        <p>Nie masz konta?<a href="#" class="register__link">Zarejestruj się</a></p>
+                    </div>
+                </div>
+                <div class="registration__box">
+                    <h2>Rejestracja</h2>
+                    <div class="input__box">
+                        <img src="images/user.png" class="img__register__login" name="email">
+                        <input type="text" required>
+                        <label>Login</label>
+                    </div>
+                    <div class="input__box">
+                        <img src="images/padlock.png" class="img__register__login" name="padlock">
+                        <input type="password" required>
+                        <label>Hasło</label>
+                    </div>
+                    <div class="input__box">
+                        <img src="images/padlock.png" class="img__register__login" name="padlock">
+                        <input type="password" required>
+                        <label> Powtórz Hasło</label>
+                    </div>
+                    <div class="input__box">
+                        <img src="images/email.png" class="img__register__login" name="email">
+                        <input type="email" required>
+                        <label>E-mail</label>
+                    </div>
+                    <div class="remember__forgot">
+                        <label>
+                            <input type="checkbox"> Akceptuje zasady i warunki
+                        </label>
+                    </div>
+                    <a href="login.html" class="login"><button type="submit">Zarejestruj</button></a>
+                    <div class="login__register">
+                        <p>Masz konto ?<a href="#" class="login__link">Zaloguj się</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </section>
     <footer>
     </footer>

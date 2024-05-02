@@ -1,8 +1,8 @@
 function sleep(ms){
     return new Promise((resolve)=> setTimeout(resolve,ms));
 }
-const phrases = ["Babci Basi"];
-const element = document.getElementById("grandmother");
+const phrases = ["Swapp"];
+const element = document.getElementById("swapping");
 
 let sleepTime = 250;
 let curPhraseIndex = 0;
@@ -23,4 +23,24 @@ const writeLetter = async () =>{
         await sleep(sleepTime * 3);
         }
    };
+
 writeLetter();
+
+const boxContainer = document.querySelector('.registration__login__container');
+const loginLink = document.querySelector('.login__link');
+const registerLink = document.querySelector('.register__link');
+const loginButton = document.querySelector('.loging');
+const close = document.querySelector('.icon__close');
+
+registerLink.addEventListener('click', () => {
+    boxContainer.classList.add('active');
+});
+loginLink.addEventListener('click', () => {
+    boxContainer.classList.add('active');
+});
+loginButton.addEventListener('click', () => {
+    boxContainer.classList.add('active-label');
+});
+close.addEventListener('click', () => {
+    boxContainer.classList.remove('active-label');
+});
