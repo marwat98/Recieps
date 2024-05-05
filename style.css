@@ -7,7 +7,7 @@
     font-family: "Montserrat" , sans-serif;
 }
 .home{
-    background-image: url(images/background1.jpg);
+    background-image: url(images/background.png);
     height: 100vh;
     width: 100%;
     background-repeat: no-repeat;
@@ -33,7 +33,7 @@ li,a,button{
 .logo{
     font-size: 3em;
     color: #f2ba36;
-    margin-right: 40vh;
+    margin-right: 80vh;
 }
 .nav__links{
     display: inline-block;
@@ -81,7 +81,6 @@ li,a,button{
     cursor: pointer;
     transition: transform 0.3s ease;
     margin-left: 2vh;
-    
 }
 button:hover{
     transform: scale(1.1);
@@ -309,4 +308,32 @@ article{
 }
 .login__register p a:hover{
     text-decoration: underline;
+}
+.navigation__dishes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    margin: 10% 0 10% 5%;
+    width: 1720px;
+    height: 60px;
+    background-color: #545454;
+    border-radius: 50px;
+    gap: 5vh;
+}
+.navigation__dishes li {
+    list-style: none;
+}
+.slider{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -5vh;
+    left: 20%;
+}
+.slider img{
+    width: 200px;
+    height: 500px;
+    margin-bottom: 10%;
 }
