@@ -81,6 +81,7 @@ li,a,button{
     cursor: pointer;
     transition: transform 0.3s ease;
     margin-left: 2vh;
+    
 }
 button:hover{
     transform: scale(1.1);
