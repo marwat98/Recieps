@@ -288,7 +288,7 @@ article{
     justify-content: center;
     margin-top: 3vh;
 }
- .login button {
+ .login {
     border: none;
     border-radius: 20px;
     font-size: 16px;
@@ -309,18 +309,69 @@ article{
 .login__register p a:hover{
     text-decoration: underline;
 }
-.navigation__dishes{
+.dishes{
     display: flex;
     align-items: center;
     justify-content: center;
-    position: sticky;
-    margin: 8% 0 10% 5%;
-    width: 1720px;
-    height: 60px;
-    background-color: #545454;
-    border-radius: 50px;
-    gap: 5vh;
+    gap: 10vh;
+    margin-top: 20vh;
+    margin-bottom: 5vh;
 }
-.navigation__dishes li {
-    list-style: none;
+.dishes a {
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    color: #f2ba36;
+    font-size: 1.5em;
+}
+.dishes img {
+    width: 24px;
+}
+.dishes__container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.title__food{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1vh;
+    color: #f2ba36;
+}
+.separator{
+    height: 2px;
+    background-color: #f2ba36;
+    margin: 20px 0;
+    max-width: 400px;
+}
+.food__card{
+    display: inline-block;
+    height: 650px;
+    width: 400px;
+    background-color: #f6f6f6;
+    margin: 5vh 1vh 5vh 5vh;
+    border-radius: 10px;
+}
+.foods img {
+    width: 400px;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.description p {
+    margin: 0 2vh 1vh 2vh;
+    text-align: justify;
+    line-height: 1.5;
+}
+.read__more{
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    width: 150px;
+    height: 35px;
+    background-color: #f2ba36;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin: 1vh 12vh;
 }
