@@ -15,7 +15,7 @@
                 <nav>
                     <ul class="nav__links">
                         <li><a href="#">Strona główna</a></li>
-                        <li><a href="#">Przepisy</a></li>
+                        <li><a href="#recieps">Przepisy</a></li>
                         <li><a href="#">O mnie</a></li>
                         <li class="search"><img src="images/search.png" class="search__img"><input 
                             type="text" name="search" placeholder="Szukaj..." class="search__input"></li>
@@ -32,7 +32,7 @@
             <article class="registration">
                 <p>Jeśli szukasz fajnych przepisów kliknij przycisk poniżej</p>
             </article>
-            <a class="recieps__btn"><button>Przepisy</button></a>
+            <a href= "#recieps" class="recieps__btn"><button>Przepisy</button></a>
         </section>
         <section class="login__box">
             <div class="registration__login__container">
@@ -97,7 +97,7 @@
             </div>
         </section>
     </section>
-    <section class="recieps__box">
+    <section class="recieps__box" id="recieps">
         <nav>
             <div class="dishes">
                 <div class="food__menu">
@@ -114,6 +114,7 @@
                 </div>
             </div>
         </nav>
+        <div class="separator__menu"></div>
         <div class="dishes__container">
             <div class="dishes__image">
                 <div class="dishes__card">
@@ -132,7 +133,7 @@
                                     Na drugim miejscu znajdują się... Wenezuelczycy, pochłaniając zaledwie połowę tego. 
                                     Trzecią lokatę zajęli natomiast Tunezyjczycy.</p>
                             </div>
-                            <button class="read__more">Czytaj wiecej...</button>
+                            <button class="read__more">Przejdź do przepisu</button>
                         </div>
                     </div>
                     <div class="food__card">
@@ -148,7 +149,7 @@
                                     Ogólnie rzecz biorąc, smak wyłaniający się z połączenia węglowodanów, pomidora, 
                                     świeżej mozzarelli i innych składników jest niezaprzeczalnie niezwykły.</p>
                             </div>
-                            <button class="read__more">Czytaj wiecej...</button>
+                            <button class="read__more">Przejdź do przepisu</button>
                         </div>
                     </div>
                     <div class="food__card">
@@ -166,13 +167,13 @@
                                     Na drugim miejscu znajdują się... Wenezuelczycy, pochłaniając zaledwie połowę tego. 
                                     Trzecią lokatę zajęli natomiast Tunezyjczycy.</p>
                             </div>
-                            <button class="read__more">Czytaj wiecej...</button>
+                            <button class="read__more">Przejdź do przepisu</button>
                         </div>
                     </div>
                     <div class="food__card">
                         <div class="foods">
                             <img src="images/4.jpeg" alt="pork chop">
-                            <h2 class="title__food">Pork Chop</h2>
+                            <h2 class="title__food">Kotlet Schabowy</h2>
                             <div class="separator"></div>
                             <div class="description">
                                 <p>
@@ -181,13 +182,25 @@
                                     Co ciekawe, choć dzisiaj trudno sobie wyobrazić rodzimą kuchnię bez tego dania, w 
                                     rzeczywistości zagościło ono na naszych stołach stosunkowo późno. 
                                     Najstarsze znane polskie książki kucharskie
-                                    (takie jak „Compendium Ferculorum” Stanisława Czarnieckiego
+                                    takie jak „Compendium Ferculorum” Stanisława Czarnieckiego
                                      </p>
                             </div>
-                            <button class="read__more">Czytaj wiecej...</button>
+                            <button class="read__more">Przejdź do przepisu</button>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="pagination__container">
+            <div class="pagination">
+                <a class="arrow"><img src="images/left.png" alt="left-arrow"></a>
+                <ul>
+                    <li class="link" value="1">1</li>
+                    <li class="link" value="2">2</li>
+                    <li class="link" value="3">3</li>
+                    <li class="link" value="4">4</li>
+                </ul>
+                <a class="arrow"><img src="images/right.png" alt="right-arrow"></a>
             </div>
         </div>
     </section>

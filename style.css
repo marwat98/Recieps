@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     font-family: "Montserrat" , sans-serif;
+    scroll-behavior: smooth;
 }
 .home{
     background-image: url(images/background.png);
@@ -288,7 +289,7 @@ article{
     justify-content: center;
     margin-top: 3vh;
 }
- .login {
+ .login button{
     border: none;
     border-radius: 20px;
     font-size: 16px;
@@ -309,23 +310,40 @@ article{
 .login__register p a:hover{
     text-decoration: underline;
 }
+
+.recieps__box{
+    background-color:#292929;
+}
 .dishes{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10vh;
-    margin-top: 20vh;
-    margin-bottom: 5vh;
+    padding: 12vh 0 2vh 0;
 }
 .dishes a {
     display: inline-block;
     text-align: center;
     justify-content: center;
     color: #f2ba36;
-    font-size: 1.5em;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.food__menu:hover{
+    color: white;
+    filter: brightness(0) invert(1);
 }
 .dishes img {
     width: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.separator__menu{
+    height: 2px;
+    background-color: #f2ba36;
+    max-width: 710px;
+    margin-left: 31%;
 }
 .dishes__container{
     display: flex;
@@ -350,8 +368,13 @@ article{
     height: 650px;
     width: 400px;
     background-color: #f6f6f6;
-    margin: 5vh 1vh 5vh 5vh;
+    margin: 5vh 1vh 3vh 5vh;
     border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.food__card:hover{
+    transform: scale(1.05);
 }
 .foods img {
     width: 400px;
@@ -368,10 +391,49 @@ article{
     border: none;
     border-radius: 20px;
     font-size: 16px;
-    width: 150px;
+    width: 180px;
     height: 35px;
     background-color: #f2ba36;
     cursor: pointer;
     transition: transform 0.3s ease;
     margin: 1vh 12vh;
+}
+.pagination__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2vh;
+}
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vh;
+}
+.pagination li{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+}
+.link{
+    padding-top: 0.2vh;
+    padding-right: 0.1vh;
+    text-align: center;
+}
+.pagination li:hover{
+    border-radius: 50px;
+    background-color: white;
+    color: #f2ba36;
+}
+.arrow{
+    background: none;
+    cursor: pointer;
+}
+.arrow:hover{
+   transform: scale(1.1);
 }
